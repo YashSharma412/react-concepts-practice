@@ -7,7 +7,9 @@ import Async_Nature from "./Components/Async_Nature";
 import UseEffect from "./Components/UseEffect";
 import LiveTyping from "./Components/LiveTyping";
 import LearnApis from "./Components/LearnApis";
-
+import Parent from "./Components/Parent";
+import UseContextPrac from "./Components/UseContextPrac";
+import CricketProvider from "./context/CircketProvider"
 const App = () => {
 
   return (
@@ -24,11 +26,20 @@ const App = () => {
       <Async_Nature />
       {/* <hr /><hr />
       <UseEffect /> */}
-      <hr /><hr />
+      <hr /><hr />0
       <LiveTyping />
 
       <hr /><hr />
       <LearnApis />
+
+      <hr /><hr />
+      <Parent />
+
+      <hr /><hr />
+      {/* <UseContextPrac /> */}
+      <CricketProvider>
+        <UseContextPrac/>
+      </CricketProvider>
     </div>
   );
 };

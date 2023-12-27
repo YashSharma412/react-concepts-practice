@@ -25,7 +25,7 @@ const LearnApis = () => {
   }
   //   getApi2()
 
-  //   post api syntax using axios
+  //   post api syntax using axios (.then and .catch syntax)
   function calculateSum1(e) {
     e.preventDefault();
 
@@ -36,6 +36,22 @@ const LearnApis = () => {
       })
       .then((response) => console.log(response.data))
       .catch((err) => console.log(err));
+  }
+
+  //   post api syntax using axios (async await syntax)
+  async function calculateSum1_5(e) {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post("http://localhost:5000/sum", {
+        num1: num1,
+        num2: num2,
+      });
+      console.log(response.data);
+      //
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   //   post api syntax using fetch
@@ -82,7 +98,7 @@ const LearnApis = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
-      <p id="answer">{}</p>
+      <p className="output_display" id="answer">{}</p>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 *{
     /* margin: 0; */
-    padding: 0;
+    /* padding: 0; */
     box-sizing: border-box;
 }
 
@@ -25,7 +25,6 @@
     margin: 10px;
     padding: 15px;
     width: fit-content;
-    /* aspect-ratio: 1/1; */
     outline: 2px solid black;
 }
 
